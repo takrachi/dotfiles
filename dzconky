@@ -2,14 +2,8 @@
 
 #Variables
 ICONPATH="/usr/share/icons/stlarch_icons"  #stlarch icons
-COLOR_ICON="#EE3B3B"
-CRIT_COLOR="#ff2c4a"
 DZEN_FG="#FC164C"
 DZEN_BG="#000000"
-HEIGHT=16
-WIDTH=0
-BAR_FG="#EE3B3B"
-BAR_BG="#808080"
 BAR_H=22
 BAR_W=1800
 FONT="-*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-*"
