@@ -1,0 +1,55 @@
+!! Appearance
+urxvt.termName:         rxvt-unicode
+urxvt.scrollBar:        false
+urxvt.background:       #000000
+urxvt.foreground:       #FFFFFF
+
+!! Font
+urxvt.font:         xft:DejaVu Sans Mono:pixelsize=13
+urxvt.boldFont:		xft:DejaVu Sans Mono:pixelsize=13:weight=bold
+urxvt.letterSpace:	-1
+urxvt.faceSize:		11
+
+!! History
+urxvt.saveLines: 1000000
+
+!! Perl extensions
+urxvt.perl-ext-common:  default,matcher,font-size
+urxvt.matcher.button:   C1
+
+Xft*dpi:                102
+Xft*antialias:          true
+Xft*hinting:            full
+
+!! Transparency
+urxvt.transparent: true
+urxvt.shading: 40
+
+!! Cursor
+urxvt.cursorColor: #FF0F6B
+
+!! Colors
+!black
+urxvt.color0:    #666666
+urxvt.color8:    #999999
+!red 
+urxvt.color1:    #FC164C
+urxvt.color9:    #ff5995
+!green
+urxvt.color2:    #99CC66
+urxvt.color10:   #99FF99
+!yellow
+urxvt.color3:    #CC9966
+urxvt.color11:   #FFFF99
+!blue
+urxvt.color4:    #6699CC
+urxvt.color12:   #99CCFF
+!magenta
+urxvt.color5:    #CC6699
+urxvt.color13:   #FF99CC
+!cyan
+urxvt.color6:    #66CCCC
+urxvt.color14:   #99FFFF
+!white
+urxvt.color7:    #CCCCCC 
+urxvt.color15:   #FFFFFF

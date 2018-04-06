@@ -1,0 +1,44 @@
+# For the benefit of emacs users: -*- shell-script -*-
+###########################
+# xbindkeys configuration #
+###########################
+
+# Kill dzen2 bar
+"ps axf | grep .colorbar | grep -v grep | awk '{print "kill -9 " $1}' | sh"
+	XF86Explorer
+
+#Increase volume
+"pamixer --increase 5"
+    XF86AudioRaiseVolume
+
+#Decrease volume
+"pamixer --decrease 5"
+    XF86AudioLowerVolume
+
+#Toggle Mute
+"pamixer -t"
+    XF86AudioMute
+
+#Backlight Increase
+"xbacklight -inc 10"
+    XF86MonBrightnessUp
+
+#Backlight Decrease
+"xbacklight -dec 10"
+    XF86MonBrightnessDown
+
+#FireFox
+"firefox"
+    XF86HomePage
+
+#Nautilus
+"nautilus"
+    XF86MyComputer
+
+#Wifi
+"urxvt -e sudo wifi-menu"
+    XF86LaunchA
+
+##################################
+# End of xbindkeys configuration #
+##################################
