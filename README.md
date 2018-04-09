@@ -13,3 +13,5 @@ dynamic-colorschemes : For changing terminal colors on the fly ~~ (https://githu
 .Xdefaults : Xorg configs pour rxvt-unicode terminal
 
 .zshrc : config pour Z shell.
+
+![alt text](https://i.imgur.com/MMwi34l.png)
