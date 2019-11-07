@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons" 
+
+echo  -n "  ^fg(#FFFFFF)^i($ICON_PATH/clock2.xbm)^fg(#FF0033)  $(date +'%a %b %e') ^fg(#FF0E46)$(date +'%R')"

@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons" 
+DZEN_FG="#FC164C"
+DZEN_BG="#000000"
+BAR_FG="#EE3B3B"
+BAR_BG="#808080"
+BAR_H=18
+BAR_W=1800
+
+NETWORK=$(nmcli d | awk 'NR==2 {print $4}')
+STATUS=$(ip addr show wlp1s0 primary | grep -Po "state UP")
+IP=$(ip addr show wlp1s0 | awk '{ gsub(/\/24/, "");} NR==3 {print $2}')
+INET=$(ip addr show wlp1s0 | awk 'NR==3 {print $1}')
+
+echo -n "^fg(#FF387D)^i($ICON_PATH/wireless1.xbm)"
+
+if [ -n "$STATUS" ]; then
+        echo -n "^fg(#FF4690) wlp1s0 | ^fg(#FF53A2)$NETWORK |^fg(#FF61B5) $IP "
+
+        if [[ $INET == "inet6" ]]; then
+                echo -n "|^fg(#FF6FC7) IPv6"
+        else
+                echo -n "|^fg(#FF6FC7) IPv4"
+        fi
+else
+        echo -n "^fg(#FF53A2) Not Connected"
+fi

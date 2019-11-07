@@ -1,0 +1,46 @@
+#!/usr/bin/env sh
+
+DZEN_FG="#FC164C"
+DZEN_BG="#000000"
+BAR_FG="#EE3B3B"
+BAR_BG="#808080"
+BAR_H=18
+BAR_W=1800
+FONT="-xos4-terminus-medium-r-*-*-12-*-*-*-*-*-iso10646-*"
+SLEEP=60
+DZEN="dzen2 -e - -ta l -w $BAR_W -h $BAR_H -fg $DZEN_FG -bg $DZEN_BG -fn $FONT" 
+
+while :; do
+
+    ~/.local/bin/status_bar/clock
+    ~/.local/bin/status_bar/point
+
+    ~/.local/bin/status_bar/volume
+    ~/.local/bin/status_bar/point
+
+    ~/.local/bin/status_bar/battery
+    ~/.local/bin/status_bar/point
+
+    ~/.local/bin/status_bar/network
+    ~/.local/bin/status_bar/point
+
+    ~/.local/bin/status_bar/memory
+    ~/.local/bin/status_bar/point
+
+    ~/.local/bin/status_bar/disk
+    ~/.local/bin/status_bar/point
+
+    ~/.local/bin/status_bar/cpu
+    ~/.local/bin/status_bar/point
+
+    ~/.local/bin/status_bar/kernel
+
+    #~/.local/bin/status_bar/music
+    #~/.local/bin/status_bar/point
+
+    ~/.local/bin/status_bar/waw
+
+    echo
+
+    sleep ${SLEEP}
+    done | $DZEN 

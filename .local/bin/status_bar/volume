@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons"
+BAR_BG="#808080"
+VOL=$(pamixer --get-volume)
+MUTE=$(pamixer --get-mute)
+ICON="vol3.xbm"
+
+if [[ $MUTE == "false" ]] ; then
+        ICON="vol1.xbm"
+fi	
+
+echo -n "^fg(#FF1C58)^i($ICON_PATH/$ICON) $(echo $VOL | gdbar -fg '#FF1C58' -bg $BAR_BG -h 8 -w 60 -s o -nonl)"
+

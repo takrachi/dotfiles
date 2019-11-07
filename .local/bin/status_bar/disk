@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons" 
+BAR_BG="#808080"
+
+SDA1=$(df -h | awk '{ gsub(/,/, "");} NR==4 {print $3}')
+
+echo -n "^fg(#FF99FF)^i($ICON_PATH/file1.xbm)^fg(#FF8BEC)  ${SDA1}  $(echo $SDA1 | gdbar -fg '#FF7DDA' -bg $BAR_BG -h 8 -w 40 -s o -nonl -min 0 -max 167)"

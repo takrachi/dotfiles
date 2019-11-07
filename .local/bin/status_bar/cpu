@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons" 
+
+TEMP=$(acpi -t | awk '{ gsub(/.0/, "");} {print $3}')
+
+echo -n "^fg(#FF6FC7)^i($ICON_PATH/temp5.xbm)^fg(#FF61B5) ${TEMP}°C" 

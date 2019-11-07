@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons" 
+BAT_VAL=$(acpi -b | awk '{ gsub(/%,/,"");} {print $4}')
+BAT_STATE=$(acpi -b | grep -Po "Discharging")
+ICON="^fg(#00FF00)^i($ICON_PATH/ac15.xbm)"
+
+if [ -n "$BAT_STATE" ]; then
+        if [[ $BAT_VAL -gt 45 ]]; then
+                ICON="^fg(#FF2A6B)^i($ICON_PATH/batt5full.xbm)"
+        elif [[ $BAT_VAL -gt 25 ]]; then
+                ICON="^fg(#FFFF00)^i($ICON_PATH/batt5half.xbm)"
+        else 
+                ICON="^fg(#FF0000)^i($ICON_PATH/batt5empty.xbm)"
+        fi
+elif [[ $BAT_VAL == "charging," ]]; then
+        BAT_VAL=$(acpi -b | awk '{ gsub(/%/,"");} {print $5}')
+fi
+
+echo -n "$ICON ^fg(#FF2A6B)${BAT_VAL} %"

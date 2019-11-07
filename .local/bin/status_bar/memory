@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons" 
+
+echo -n "^fg(#FF7DDA)^i($ICON_PATH/mem1.xbm)^fg(#FF8BEC)  $(free -h | awk 'NR==2 {print $3,"/",$4}')"

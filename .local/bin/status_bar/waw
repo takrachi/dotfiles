@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons" 
+echo -n "   ^fg(#FFFFFF)^i($ICON_PATH/heart2.xbm)  "

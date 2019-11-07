@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+echo -n "    ^fg(#A0A0A0)^r(1x1)    "

@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+echo -n "^fg(#FF53A2) Kernel: ^fg(#FF4690)$(uname -a | awk '{print $3}')"

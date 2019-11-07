@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+xbindkeys -f ~/.config/xbindkeysrc &
+xset -b &
+numlockx &
+feh --bg-fill ~/Desktop/wallpaper.png &
+dynamic-colors init & 

@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+ICON_PATH="/usr/share/icons/stlarch_icons" 
+
+# mpd/ncmpcpp
+COMMAND='urxvt -e ncmpcpp'
+echo -n " ^fg(#FFB3CF)^ca(1,$COMMAND)^i($ICON_PATH/note5.xbm)^ca()"
+NOWPLAYING=$(ncmpcpp --current-song | awk '{ gsub(/,/, "");} NR==1 {print $2 " " $3 " " $4 " " $5 " " $6 " " $7 " " $8 " " $9 " " $10 " " $11}')
+echo -n "  $NOWPLAYING"

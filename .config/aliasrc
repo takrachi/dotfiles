@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+alias cf='xclip -i $1 -selection clipboard' \
+        hxd='xxd -r -p' \
+        rm='rm -rfi' \
+        ls='ls --color=auto' \
+        d='cd ~/Downloads && ls' \
+        la='ls -lah' \
+        py='python2.7' \
+        ..='cd ..' \
+        nete='sudo  ~/Documents/Work/netExtenderClient/netExtender' \
+        my='~/Apps/mymail.py' \
+        run='gcc -Wall *.c && ./a.out' \
+        ser='php -S 127.0.0.1:22222' \
+        mon='xrandr --output HDMI1 --mode 1920x1080 --right-of eDP1' \
+        ele='cd ~/Documents/Ecole/ELE216/Lab2 && ls' \
+        music='surf music.google.com'

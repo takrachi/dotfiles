@@ -1,0 +1,8 @@
+[user]
+	email = rachel_takla@hotmail.com
+	name = takrachi
+[includeIf "gitdir:~/Documents/Ecole/inf145/bibliotheque/"]
+	path = ~/Documents/Ecole/inf145/.gitconfig
+[includeIf "gitdir:~/Documents/Ecole/inf145/Bibliotheque_v2/"]
+	path = ~/Documents/Ecole/inf145/.gitconfig
+

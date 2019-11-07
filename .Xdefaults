@@ -1,5 +1,5 @@
 !! Appearance
-urxvt.termName:         rxvt-unicode
+urxvt.termName:         rxvt-256color
 urxvt.scrollBar:        false
 urxvt.background:       #000000
 urxvt.foreground:       #FFFFFF
@@ -32,24 +32,25 @@ urxvt.cursorColor: #FF0F6B
 !black
 urxvt.color0:    #666666
 urxvt.color8:    #999999
-!red 
+!red - le plus beau rouge rose
 urxvt.color1:    #FC164C
-urxvt.color9:    #ff5995
-!green
+urxvt.color9:    #ff0f6b
+!green - vert fluo
 urxvt.color2:    #99CC66
 urxvt.color10:   #99FF99
-!yellow
+!yellow - jaune pipi 
 urxvt.color3:    #CC9966
-urxvt.color11:   #FFFF99
-!blue
+urxvt.color11:   #F99085
+!blue - bley fonce
 urxvt.color4:    #6699CC
-urxvt.color12:   #99CCFF
-!magenta
+urxvt.color12:   #0000FF
+!magenta - damn mauve flash 
 urxvt.color5:    #CC6699
 urxvt.color13:   #FF99CC
-!cyan
+!cyan - cyan en coline couleur pris par range
 urxvt.color6:    #66CCCC
-urxvt.color14:   #99FFFF
-!white
-urxvt.color7:    #CCCCCC 
+urxvt.color14:   #6666FF
+!white - cute rose pale couleur pris par les string binaire
+urxvt.color7:    #CCCCCC
+!encore plus cute rose pale
 urxvt.color15:   #FFFFFF
